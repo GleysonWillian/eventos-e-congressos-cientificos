@@ -10,6 +10,32 @@
 </head>
 
 <body>
+    <header> ... </header>
+    <main>
+        <h2>Formulário de Inscrição</h2>
+        <form action="#" method="post">
+            <label>CPF:<input type="text" name="cpf" required maxlength="11"></label><br>
+            <label>Nome:<input type="text" name="nome" required></label><br>
+            <label>E-mail:<input type="email" name="email" required></label><br>
+            <label>Senha:<input type="password" name="senha" required></label><br>
+            <label>Telefone:<input type="tel" name="telefone"></label><br>
+            <label>Endereço:<input type="text" name="endereco"></label><br>
+            <label>Cidade:<input type="text" name="cidade"></label>
+            <label>Estado:<input type="text" name="estado"></label>
+            <label>País:<input type="text" name="pais"></label><br>
+            <fieldset>
+                <legend>Titulação:</legend>
+                <label><input type="radio" name="titulacao" value="Graduacao"> Graduação</label>
+                <label><input type="radio" name="titulacao" value="Mestrado"> Mestrado</label>
+                <label><input type="radio" name="titulacao" value="Doutorado"> Doutorado</label>
+            </fieldset>
+            <label>Instituição:<input type="text" name="instituicao"></label><br>
+            <button type="submit">Enviar inscrição</button>
+        </form>
+    </main>
+
+    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
