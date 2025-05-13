@@ -1,4 +1,115 @@
-.voltar{
+.voltar {
     display: block;
     text-align: center;
+    color: #041726;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #f0f4fb;
+    padding: 85px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.legenda span {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.evento-sbc {
+    background: #f4c542;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.evento-base {
+    background: #0f6db5;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.eventos-sociais {
+    background: #f5c6e7;
+    text-align: center;
+}
+
+.evento-coffee {
+    background: #f5c6e7;
+    text-align: center;
+    width: 1045px;
+    border-radius: 5px;
+}
+.evento-intervalo{
+    background: #f5c6e7;
+    text-align: center;
+    width: 1045px;
+    border-radius: 5px;
+}
+
+.tabela-programacao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 150px repeat(4, 1fr);
+    margin-bottom: 5px;
+}
+
+.hora {
+    background: #dee2e6;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.evento {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+.navbar{
+    background-color: #041726;
+    width: 100%;
+    
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.hero {
+    max-width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(images/capa.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
 }
