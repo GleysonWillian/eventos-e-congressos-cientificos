@@ -1,18 +1,20 @@
-
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: #f2efef;
+    background: #eef6fce1;
     color: #333;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
     margin: 40px auto;
     padding: 30px;
     margin-top: 90px;
-
 }
 
 h1 {
+    padding-top: 50;
     text-align: center;
+    font-weight: bold;
+}
+
+h4 {
     font-weight: bold;
 }
 
@@ -48,7 +50,8 @@ h1 {
     display: grid;
     border-radius: 5px;
 }
-.evento-intervalo{
+
+.evento-intervalo {
     background: #f5c6e7;
     text-align: center;
     display: grid;
@@ -85,9 +88,9 @@ h1 {
 }
 
 .navbar{
-    background-color: #041726;
+    background-color: #010910;
     width: 100%;
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-nav {
@@ -128,4 +131,43 @@ h1 {
 
 .voltar:hover {
     text-decoration: underline;
+}
+
+.abas-container {
+    margin-top: 80px;
+    /* caso o navbar esteja fixo */
+    padding: 20px;
+}
+
+.abas-container input[type="radio"] {
+    display: none;
+}
+
+.abas-container label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.abas-container input[type="radio"]:checked+label {
+    background-color: #ffffff;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.conteudo {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ffffff;
+}
+
+#dia1:checked~#conteudo-dia1,
+#dia2:checked~#conteudo-dia2 {
+    display: block;
 }

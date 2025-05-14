@@ -1,7 +1,7 @@
 .navbar{
-    background-color: #041726;
+    background-color: #010910;
     width: 100%;
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-nav {
@@ -22,7 +22,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #f0f2f5, #d9e4f5);
+        background: #eef6fce1;
     margin: 0;
     padding: 50px;
 }
@@ -109,7 +109,7 @@ fieldset label {
 
 .voltar {
     display: block;
-    text-align: right;
+    text-align: center;
     margin: 20px auto;
     color: #3498db;
     text-decoration: none;
