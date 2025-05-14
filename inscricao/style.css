@@ -1,8 +1,30 @@
+.navbar{
+    background-color: #041726;
+    width: 100%;
+    
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #f0f2f5, #d9e4f5);
     margin: 0;
-    padding: 0;
+    padding: 50px;
 }
 
 .main {
@@ -87,7 +109,7 @@ fieldset label {
 
 .voltar {
     display: block;
-    text-align: center;
+    text-align: right;
     margin: 20px auto;
     color: #3498db;
     text-decoration: none;
