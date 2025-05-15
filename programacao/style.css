@@ -119,20 +119,6 @@ h4 {
     position: relative;
 }
 
-
-.voltar {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.voltar:hover {
-    text-decoration: underline;
-}
-
 .abas-container {
     margin-top: 80px;
     /* caso o navbar esteja fixo */

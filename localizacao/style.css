@@ -46,17 +46,3 @@ h2{
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
-
-.voltar {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.voltar:hover {
-    text-decoration: underline;
-    font-weight: bold;
-}
