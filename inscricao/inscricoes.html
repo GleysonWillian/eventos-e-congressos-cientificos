@@ -48,25 +48,59 @@
         </div>
     </nav>
     <main class="main">
-        <h2>Inscrição</h2>
-        <form action="#" method="post">
-            <label>CPF:<input type="text" name="cpf" required maxlength="11"></label><br>
-            <label>Nome:<input type="text" name="nome" required></label><br>
-            <label>E-mail:<input type="email" name="email" required></label><br>
-            <label>Senha:<input type="password" name="senha" required></label><br>
-            <label>Telefone:<input type="tel" name="telefone"></label><br>
-            <label>Endereço:<input type="text" name="endereco"></label><br>
-            <label>Cidade:<input type="text" name="cidade"></label>
-            <label>Estado:<input type="text" name="estado"></label>
-            <label>País:<input type="text" name="pais"></label><br>
+        <h1>Inscrição</h1>
+        <form action="processa_inscricao.php" method="post">
             <fieldset>
-                <legend>Titulação:</legend>
-                <label><input type="radio" name="titulacao" value="Graduacao"> Graduação</label>
-                <label><input type="radio" name="titulacao" value="Mestrado"> Mestrado</label>
-                <label><input type="radio" name="titulacao" value="Doutorado"> Doutorado</label>
+                <legend>Dados do Usuário</legend>
+
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" required>
+
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
             </fieldset>
-            <label>Instituição:<input type="text" name="instituicao"></label><br>
-            <button class="button" type="submit">Enviar inscrição</button>
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" required>
+
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" required>
+
+                <label for="pais">País</label>
+                <input type="text" name="pais" id="pais" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Graduação</legend>
+
+                <label for="titulacao">Titulação</label>
+                <select name="titulacao" id="titulacao" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="Graduação">Graduação</option>
+                    <option value="Mestre">Mestre</option>
+                    <option value="Doutor">Doutor</option>
+                </select>
+
+                <label for="instituicao">Instituição / Universidade</label>
+                <input type="text" name="instituicao" id="instituicao" required>
+            </fieldset>
+
+            <input type="submit" value="Enviar Inscrição">
         </form>
 
     </main>
