@@ -56,7 +56,7 @@
                 <label for="cpf">CPF</label>
                 <input type="text" name="cpf" id="cpf" required>
 
-                <label for="nome">Nome Completo</label>
+                <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required>
 
                 <label for="email">E-mail</label>
@@ -72,8 +72,11 @@
             <fieldset>
                 <legend>Endereço</legend>
 
-                <label for="endereco">Endereço</label>
-                <input type="text" name="endereco" id="endereco" required>
+                <label for="logradouro">Logradouro</label>
+                <input type="text" name="lograoudo" id="logradouro" required>
+
+                <label for="completmento">Complemento</label>
+                <input type="text" name="completmento" id="completmento" required>
 
                 <label for="cidade">Cidade</label>
                 <input type="text" name="cidade" id="cidade" required>
@@ -91,9 +94,14 @@
                 <label for="titulacao">Titulação</label>
                 <select name="titulacao" id="titulacao" required>
                     <option value="">-- Selecione --</option>
-                    <option value="Graduação">Graduação</option>
+                    <option value="Tecnico">Técnico</option>
+                    <option value="Tecnologo">Tecnólogo</option>
+                    <option value="Licenciado">Licenciado</option>
+                    <option value="Bacharel">Bacharel</option>
+                    <option value="MBA">MBA</option>
                     <option value="Mestre">Mestre</option>
                     <option value="Doutor">Doutor</option>
+                    <option value="Pos-Doc">Pós-Doc</option>
                 </select>
 
                 <label for="instituicao">Instituição / Universidade</label>
