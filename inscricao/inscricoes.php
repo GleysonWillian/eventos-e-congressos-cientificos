@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="../localizacao/local.html">Localização</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../inscricao/inscricoes.html">Inscrições</a>
+                        <a class="nav-link" href="../inscricao/inscricoes.php">Inscrições</a>
                     </li>
                 </ul>
             </div>
@@ -73,10 +73,10 @@
                 <legend>Endereço</legend>
 
                 <label for="logradouro">Logradouro</label>
-                <input type="text" name="lograoudo" id="logradouro" required>
+                <input type="text" name="logradouro" id="logradouro" required>
 
-                <label for="completmento">Complemento</label>
-                <input type="text" name="completmento" id="completmento" required>
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" required>
 
                 <label for="cidade">Cidade</label>
                 <input type="text" name="cidade" id="cidade" required>
@@ -108,7 +108,7 @@
                 <input type="text" name="instituicao" id="instituicao" required>
             </fieldset>
 
-            <input type="submit" value="Enviar Inscrição">
+            <input type="submit" name="submit" id="submit">
         </form>
 
     </main>
