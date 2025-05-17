@@ -7,73 +7,146 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Eventos e Congressos Científicos</title>
+    <style>
+        body {
+            padding-top: 100px;
+        }
 
-    <link rel="stylesheet" href="styles.css">
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .img-fluid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.5s ease;
+
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: #08121a9e !important;
+            /* cor ao passar o mouse, opcional */
+        }
+
+        .navbar-toggler {
+            border-color: white;
+        }
+
+        .navbar-toggler:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    </style>
+
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top glass-navbar"
+        style="top: 0px; z-index: 10; padding-left: 40px; padding-right: 40px; height: auto; position: fixed; background-color: #165082; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold; font-size: large;">
+        <div class="container">
+            <!-- Você pode adicionar um logo à esquerda se quiser -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="color:white;"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav" style="color: white !important;">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Top">Home</a>
+                        <a class="nav-link active" href="index.html#Top">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Sobre">Sobre</a>
+                        <a class="nav-link" href="index.html#Sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#PrincipaisPalestrantes">Principais Palestrantes</a>
+                        <a class="nav-link" href="index.html#PrincipaisPalestrantes">Principais Palestrantes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Datas">Datas</a>
+                        <a class="nav-link" href="index.html#Datas">Datas e Local</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="programacao/programacao.html">Programação</a>
+                        <a class="nav-link" href="programacao.html">Programação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="localizacao/local.html">Localização</a>
+                        <a class="nav-link" href="local.html">Localização</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inscricao/inscricoes.php">Inscrições</a>
+                        <a class="nav-link" href="inscricoes.php#inscricoes">Inscrições</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="hero">
-        <div class="container"></div>
+
+    <div class="img-fluid">
+        <img src="capa.jpg" alt="Imagem responsiva">
     </div>
 
-    <main class="container">
-        <section>
-            <h2 id="Sobre">Sobre o Evento</h2>
-            <p>Descrição geral do evento, tema, objetivos e público-alvo.</p>
+    <main class="container my-5" style="padding: 20px;">
+        <!-- SOBRE O EVENTO -->
+        <section class="mb-5" id="Sobre">
+            <h2 class="mb-3">Sobre o Evento</h2>
+            <p class="lead">Este evento tem como foco principal apresentar e discutir temas relevantes da atualidade. O
+                público-alvo inclui estudantes, profissionais e interessados na área.</p>
         </section>
 
-        <section>
-            <h2 id="PrincipaisPalestrantes">Palestrantes Principais</h2>
-            <div>
-                <p>Dr. Fulano de Tal</p>
-                <p>Dra. Beltrana Silva</p>
-                <!-- ... -->
+        <!-- PALESTRANTES PRINCIPAIS -->
+        <section class="mb-5" id="PrincipaisPalestrantes">
+            <h2 class="mb-4">Palestrantes Principais</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Fulano de Tal</h5>
+                            <p class="card-text">Especialista em Inteligência Artificial e autor de diversos artigos
+                                científicos na área.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Dra. Beltrana Silva</h5>
+                            <p class="card-text">Referência em Sustentabilidade e Tecnologia com atuação internacional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais palestrantes aqui, se quiser -->
             </div>
         </section>
 
-        <section>
-            <h2 id="Datas">Data e Local</h2>
-            <p>Datas importantes e local do evento.</p>
+        <!-- DATAS IMPORTANTES E LOCAL -->
+        <section id="Datas">
+            <h2 class="mb-3">Data e Local</h2>
+            <p><strong>Data:</strong> 15 e 16 de Agosto de 2025</p>
+            <p><strong>Local:</strong> Centro de Convenções Exemplo - Rua da Inovação, 123 - São Paulo, SP</p>
         </section>
-
-
     </main>
 
     <footer></footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const imagem = document.querySelector('.imagem-banner img');
+            const scrollTop = window.scrollY;
+            const fadePoint = 300; // distância em pixels para desaparecer
+
+            // Calcula opacidade entre 1 e 0
+            let opacity = 1 - scrollTop / fadePoint;
+            if (opacity < 0) opacity = 0;
+            imagem.style.opacity = opacity;
+        });
+    </script>
+
 
     <script src="seu-script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"

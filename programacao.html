@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Document</title>
+
+
+    <style>
+        .custom-navbar {
+            background-color: #165082;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: #08121a9e !important;
+            /* cor ao passar o mouse, opcional */
+        }
+
+        .navbar-toggler {
+            border-color: white;
+        }
+
+        .navbar-toggler:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        body {
+            padding: 80px;
+        }
+
+        .tabela-programacao {
+            margin-top: 20px;
+        }
+
+        .linha {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .hora {
+            font-weight: bold;
+            min-width: 120px;
+        }
+
+        .evento {
+            background-color: #b7cde3;
+            padding: 8px;
+            border-radius: 4px;
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .evento-sbc {
+            background-color: #85c0ff;
+        }
+
+        .evento-base {
+            background-color: #7af697;
+        }
+
+        .evento-intervalo {
+            background-color: #ffda62;
+            flex: 4;
+            text-align: center;
+        }
+
+        .evento-coffee {
+            background-color: #fc8c95;
+            flex: 4;
+            text-align: center;
+        }
+        .linha2{
+            font-size: x-small;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top"
+        style="top: 0px; z-index: 10; padding-left: 40px; padding-right: 40px; height: auto; position: fixed; background-color: #165082; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold; font-size: large;">
+        <div class="container">
+            <!-- Você pode adicionar um logo à esquerda se quiser -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#Top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#PrincipaisPalestrantes">Principais Palestrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#Datas">Datas e Local</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programacao.html">Programação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="local.html">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inscricoes.php">Inscrições</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Programação Geral</h1>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="programacaoTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="dia1-tab" data-bs-toggle="tab" data-bs-target="#dia1" type="button"
+                    role="tab" aria-controls="dia1" aria-selected="true">Dia 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="dia2-tab" data-bs-toggle="tab" data-bs-target="#dia2" type="button"
+                    role="tab" aria-controls="dia2" aria-selected="false">Dia 2</button>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="dia1" role="tabpanel" aria-labelledby="dia1-tab">
+                <h4>Programação Dia 1</h4>
+                <div class="tabela-programacao">
+                    <div class="linha">
+                        <div class="hora">08h00 - 12h00</div>
+                        <div class="evento evento-sbc">Conselho SBC</div>
+                        <div class="evento evento-base">CQ</div>
+                        <div class="evento evento-base">CQEB</div>
+                        <div class="evento evento-base">EIMP</div>
+                    </div>
+                    <div class="linha">
+                        <div class="hora">12h00 - 13h30</div>
+                        <div class="evento evento-intervalo">Brunch/Almoço</div>
+                    </div>
+                    <div class="linha">
+                        <div class="hora">13h30 - 15h30</div>
+                        <div class="evento evento-sbc">Conselho SBC <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div>
+                        </div>
+                        <div class="evento evento-base">CQ</div>
+                        <div class="evento evento-base">CQEB</div>
+                        <div class="evento evento-base">EIMP</div>
+                    </div>
+                    <div class="linha">
+                        <div class="hora">15h30 - 16h00</div>
+                        <div class="evento evento-coffee">Coffee Break</div>
+                    </div>
+                    <div class="linha">
+                        <div class="hora">16h00 - 18h30</div>
+                        <div class="evento evento-sbc">Conselho SBC</div>
+                        <div class="evento evento-base">CQ</div>
+                        <div class="evento evento-base">CQEB</div>
+                        <div class="evento evento-base">EIMP</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="dia2" role="tabpanel" aria-labelledby="dia2-tab">
+                <h4>Programação Dia 2</h4>
+                <div class="tabela-programacao">
+                    <div class="linha">
+                        <div class="hora">08h00 - 09h30</div>
+                        <div class="evento evento-sbc">Sessão Técnica 1</div>
+                        <div class="evento evento-base">Workshop X</div>
+                        <div class="evento evento-base">Mini-curso A</div>
+                        <div class="evento evento-base">Mini-curso B</div>
+                    </div>
+                    <div class="linha">
+                        <div class="hora">09h30 - 10h00</div>
+                        <div class="evento evento-coffee">Coffee Break</div>
+                    </div>
+                    <div class="linha">
+                        <div class="hora">10h00 - 12h00</div>
+                        <div class="evento evento-sbc">Sessão Técnica 2</div>
+                        <div class="evento evento-base">Workshop Y</div>
+                        <div class="evento evento-base">Mini-curso C</div>
+                        <div class="evento evento-base">Mini-curso D</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
