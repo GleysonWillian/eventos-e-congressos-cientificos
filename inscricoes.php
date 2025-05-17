@@ -72,19 +72,19 @@
             <div class="col-md-12">
                 <fieldset class="border p-3">
                     <legend class="float-none w-auto p-2">Dados Pessoais</legend>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="cpf" class="form-label">CPF</label>
                         <input type="text" class="form-control" name="cpf" id="cpf" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="nome" class="form-label">Nome</label>
                         <input type="text" class="form-control" name="nome" id="nome" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="email" class="form-label">E-mail</label>
                         <input type="email" class="form-control" name="email" id="email" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="senha" class="form-label">Senha</label>
                         <input type="password" class="form-control" name="senha" id="senha" required>
                     </div>
@@ -98,23 +98,23 @@
             <div class="col-md-12">
                 <fieldset class="border p-3">
                     <legend class="float-none w-auto p-2">Endereço</legend>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="logradouro" class="form-label">Logradouro</label>
                         <input type="text" class="form-control" name="logradouro" id="logradouro" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="complemento" class="form-label">Complemento</label>
                         <input type="text" class="form-control" name="complemento" id="complemento" required>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <label for="cidade" class="form-label">Cidade</label>
                         <input type="text" class="form-control" name="cidade" id="cidade" required>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <label for="estado" class="form-label">Estado</label>
                         <input type="text" class="form-control" name="estado" id="estado" required>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <label for="pais" class="form-label">País</label>
                         <input type="text" class="form-control" name="pais" id="pais" required>
                     </div>
@@ -124,7 +124,7 @@
             <div class="col-md-12">
                 <fieldset class="border p-3">
                     <legend class="float-none w-auto p-2">Dados de Graduação</legend>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="titulacao" class="form-label">Titulação</label>
                         <select class="form-select" name="titulacao" id="titulacao" required>
                             <option value="">-- Selecione --</option>
@@ -138,7 +138,7 @@
                             <option value="Pos-Doc">Pós-Doc</option>
                         </select>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="instituicao" class="form-label">Instituição / Universidade</label>
                         <input type="text" class="form-control" name="instituicao" id="instituicao" required>
                     </div>
