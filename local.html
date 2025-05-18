@@ -8,12 +8,24 @@
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Localização</title>
     <style>
-        .custom-navbar {
-            background-color: #165082;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: bold;
+        body {
+            padding-top: 80px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
+        .custom-navbar {
+            top: 0;
+            z-index: 10;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: auto;
+            position: fixed;
+            background-color: #3189d6;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: large;
+        }
 
         .navbar .nav-link {
             color: white !important;
@@ -30,10 +42,6 @@
         .navbar-toggler:focus {
             outline: none !important;
             box-shadow: none !important;
-        }
-
-        body {
-            padding: 80px;
         }
 
         .buttons {
@@ -63,7 +71,8 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-        .page2{
+
+        .page2 {
             text-align: center;
         }
 
@@ -87,14 +96,14 @@
             position: relative;
             width: 100%;
             max-width: 100%;
-            height: 250px;
+            height: 300px;
             overflow: hidden;
             border-radius: 10px;
         }
 
         .carrossel img {
             width: 100%;
-            height: 250px;
+            height: 300px;
             object-fit: cover;
             display: none;
         }
@@ -116,21 +125,22 @@
             background-color: #ccc;
             cursor: pointer;
         }
+
+        .para {
+            text-align: justify;
+        }
     </style>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top"
-        style="top: 0px; z-index: 10; padding-left: 40px; padding-right: 40px; height: auto; position: fixed; background-color: #165082; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold; font-size: large;">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container">
-            <!-- Você pode adicionar um logo à esquerda se quiser -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="color:white;"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" style="color: white !important;">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html#Top">Home</a>
                     </li>
@@ -150,59 +160,70 @@
                         <a class="nav-link" href="local.html">Localização</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inscricoes.php">Inscrições</a>
+                        <a class="nav-link" href="inscricoes.php#inscricoes">Inscrições</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <div class="buttons">
         <button onclick="showPage('cidade')">Sobre a Cidade</button>
         <button onclick="showPage('endereco')">Endereço do Evento</button>
     </div>
 
-    <!-- Página: SOBRE A CIDADE -->
     <div id="cidade" class="page active">
         <h2>Sobre a Cidade</h2>
         <div class="cidade-container">
-            <!-- Coluna de texto -->
-            <div class="coluna">
-                <p>Exemploópolis é uma cidade vibrante, conhecida por sua rica história e grande investimento em
-                    inovação tecnológica. Possui parques, museus e centros culturais que encantam visitantes de todas as
-                    idades.</p>
-                <p>Durante o evento, você poderá conhecer o famoso Parque da Tecnologia, a Praça dos Inventores e a
-                    tradicional Feira da Inovação.</p>
-            </div>
+            <div class=" para coluna">
+                <p>Recife, capital de Pernambuco, é uma cidade vibrante e histórica, carinhosamente apelidada de "Veneza
+                    Brasileira" devido aos seus rios, pontes e canais que cortam a paisagem urbana. Com uma rica herança
+                    cultural que se manifesta em sua arquitetura colonial colorida, música contagiante como o frevo e o
+                    maracatu, e uma culinária saborosa influenciada por diversas culturas, Recife oferece uma
+                    experiência única. <br>
 
-            <!-- Coluna com carrossel de imagens -->
+                    Além de sua beleza e cultura, Recife se destaca como um polo tecnológico e de inovação crescente,
+                    impulsionado pelo Porto Digital, um dos maiores parques tecnológicos da América Latina. Esse
+                    ambiente dinâmico, aliado à presença de universidades e instituições de pesquisa de excelência como
+                    a UFPE e a Fiocruz, tem fomentado o desenvolvimento em áreas como tecnologia da informação, saúde
+                    digital e, cada vez mais, a bio-inovação. <br>
+
+                    Com um forte potencial em biotecnologia agrícola devido ao setor agrícola regional e à rica
+                    biodiversidade do Nordeste, e um crescente foco em saúde e biotecnologia da saúde impulsionado por
+                    um importante polo médico-hospitalar, Recife se posiciona como um centro estratégico para o futuro
+                    da bio-inovação no Brasil. Sua conectividade, talento local e ecossistema em expansão a tornam um
+                    local promissor para empresas, pesquisadores e eventos que buscam moldar o futuro da vida através da
+                    biotecnologia. <br>
+                    Durante o evento, você poderá conhecer o famoso Parque da Tecnologia, a Praça dos Inventores e a
+                    tradicional Feira da Inovação.
+                </p>
+            </div>
             <div class="coluna">
                 <div class="carrossel" id="carrossel">
                     <img src="images/cidade-evento.jpeg" class="ativo">
                     <img src="images/cidade-evento1.jpeg">
                     <img src="images/cidade-evento2.jpeg">
+                    <img src="images/Centro de Convenções Pernambuco Recife Olinda.jpg">
+                    <img src="images/recife.jpeg">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Página: ENDEREÇO -->
     <div id="endereco" class="page">
         <div class="page2">
             <h2>Endereço do Evento</h2>
-            <p><strong>Centro de Convenções Exemplo</strong><br>
-                Rua das Inovações, 1234<br>
-                Bairro Tecnológico<br>
-                Exemploópolis - EX<br>
-                CEP: 12345-678</p>
+            <p><strong>Centro de Convenções em Pernambuco</strong><br>
+                Av. Prof. Andrade Bezerra, s/n<br>
+                Salgadinho, Olinda - PE<br>
+                CEP: 53110-680</p>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7689849334013!2d-46.65598168502114!3d-23.577014368170217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b1afec0a25%3A0x4779fc7f47050b69!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1675647604627!5m2!1spt-BR!2sbr"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6779648643537!2d-34.873086318424626!3d-8.032100450025581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18798b20e83b%3A0x9a4fb33c2ab9e29b!2sCentro%20de%20Conven%C3%A7%C3%B5es%20de%20Pernambuco!5e0!3m2!1spt-BR!2sbr!4v1747524941206!5m2!1spt-BR!2sbr"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </div>
 
-    <!-- Script -->
     <script>
         function showPage(pageId) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -217,8 +238,6 @@
             index = (index + direcao + imagens.length) % imagens.length;
             imagens[index].classList.add('ativo');
         }
-
-        // Troca automática a cada 2 segundos
         setInterval(() => {
             trocarImagem(1);
         }, 4000);

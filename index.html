@@ -9,22 +9,20 @@
     <title>Eventos e Congressos Científicos</title>
     <style>
         body {
-            padding-top: 100px;
+            padding-top: 30px;
         }
 
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .img-fluid img {
-            width: 100%;
+        .custom-navbar {
+            top: 0;
+            z-index: 10;
+            padding-left: 40px;
+            padding-right: 40px;
             height: auto;
-            display: block;
-            transition: opacity 0.5s ease;
-
+            position: fixed;
+            background-color: #3189d6;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: large;
         }
 
         .navbar .nav-link {
@@ -33,7 +31,6 @@
 
         .navbar .nav-link:hover {
             color: #08121a9e !important;
-            /* cor ao passar o mouse, opcional */
         }
 
         .navbar-toggler {
@@ -44,16 +41,43 @@
             outline: none !important;
             box-shadow: none !important;
         }
+
+        .parag {
+            text-align: justify;
+        }
+
+        .session-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .speaker-card {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            background-color: white;
+        }
+
+        .speaker-title {
+            color: #000000;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+        }
     </style>
-
-
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top glass-navbar"
-        style="top: 0px; z-index: 10; padding-left: 40px; padding-right: 40px; height: auto; position: fixed; background-color: #165082; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold; font-size: large;">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container">
-            <!-- Você pode adicionar um logo à esquerda se quiser -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="color:white;"></span>
@@ -86,67 +110,106 @@
         </div>
     </nav>
 
-    <div class="img-fluid">
-        <img src="capa.jpg" alt="Imagem responsiva">
+    <div class="bg-primary text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Horizontes da Bio-Inovação</h1>
+            <h4 class="lead mb-4">Moldando o Futuro da Vida<br>17 e 18 de Julho • Recife PBL</h4>
+        </div>
     </div>
 
     <main class="container my-5" style="padding: 20px;">
-        <!-- SOBRE O EVENTO -->
         <section class="mb-5" id="Sobre">
             <h2 class="mb-3">Sobre o Evento</h2>
-            <p class="lead">Este evento tem como foco principal apresentar e discutir temas relevantes da atualidade. O
-                público-alvo inclui estudantes, profissionais e interessados na área.</p>
+            <p class="parag">Este congresso explorará as últimas fronteiras da biotecnologia e bioengenharia, abrangendo
+                desde avanços revolucionários em terapias genéticas e medicina regenerativa até inovações em agricultura
+                sustentável e materiais bioinspirados. O objetivo é fomentar a discussão interdisciplinar e inspirar
+                novas colaborações para enfrentar os desafios globais através da bio-inovação.</p>
         </section>
 
-        <!-- PALESTRANTES PRINCIPAIS -->
-        <section class="mb-5" id="PrincipaisPalestrantes">
-            <h2 class="mb-4">Palestrantes Principais</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Dr. Fulano de Tal</h5>
-                            <p class="card-text">Especialista em Inteligência Artificial e autor de diversos artigos
-                                científicos na área.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Dra. Beltrana Silva</h5>
-                            <p class="card-text">Referência em Sustentabilidade e Tecnologia com atuação internacional.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Adicione mais palestrantes aqui, se quiser -->
+        <h2>Principais Palestrantes</h2>
+
+        <section class="session-box mb-4">
+            <h3>Sessão de Medicina e Saúde</h3>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dra. Anya Sharma</h4>
+                <p>Pioneira em edição genética de precisão utilizando CRISPR avançado para o tratamento de doenças
+                    hereditárias complexas.</p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Prof. Kenji Tanaka</h4>
+                <p>Líder no campo da medicina regenerativa e engenharia de tecidos, com foco na criação de órgãos
+                    bioartificiais.</p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dra. Isabella Rossi</h4>
+                <p>Especialista em nanobiotecnologia aplicada ao diagnóstico precoce e entrega direcionada de fármacos.
+                </p>
             </div>
         </section>
 
-        <!-- DATAS IMPORTANTES E LOCAL -->
+        <section class="session-box mb-4">
+            <h3>Sessão de Agricultura e Sustentabilidade</h3>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dr. Jian Li</h4>
+                <p>Engenheiro agrônomo com foco em biotecnologia para o desenvolvimento de culturas resistentes a
+                    estresses ambientais.</p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Prof. Lena Dubois</h4>
+                <p>Cientista de materiais com expertise em biomimética e desenvolvimento de bioplásticos biodegradáveis.
+                </p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dr. Mateo Vargas</h4>
+                <p>Pesquisador em microbiologia do solo e suas aplicações para a agricultura sustentável.</p>
+            </div>
+        </section>
+
+        <section class="session-box mb-4">
+            <h3>Sessão de Bioengenharia e Materiais</h3>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dra. Sofia Müller</h4>
+                <p>Engenheira bioquímica com foco em biocatalisadores e bioproc essamento para a produção sustentável.
+                </p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Prof. Ben Carter</h4>
+                <p>Arquiteto e designer com vasta experiência em bioarquitetura e utilização de materiais vivos na
+                    construção.</p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dra. Emily White</h4>
+                <p>Especialista em inteligência artificial aplicada à análise de dados biológicos complexos e ao design
+                    de biomoléculas.</p>
+            </div>
+        </section>
+        <section class="session-box mb-4">
+            <h3>Outros Palestrantes</h3>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dr. Ricardo Almeida</h4>
+                <p>Neurocientista com foco em interfaces cérebro-máquina.
+                </p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dra. Elena Vargas</h4>
+                <p>Oncologista especializada em imunoterapia e terapias celulares.</p>
+            </div>
+            <div class="speaker-card">
+                <h4 class="speaker-title">Dr. Samuel Oliveira</h4>
+                <p>Cardiologista e bioengenheiro dedicado a dispositivos cardíacos implantáveis.</p>
+            </div>
+        </section>
+
         <section id="Datas">
             <h2 class="mb-3">Data e Local</h2>
-            <p><strong>Data:</strong> 15 e 16 de Agosto de 2025</p>
-            <p><strong>Local:</strong> Centro de Convenções Exemplo - Rua da Inovação, 123 - São Paulo, SP</p>
+            <p><strong>Data:</strong> 17 e 18 de Julho de 2025</p>
+            <p><strong>Local:</strong> Centro de Convenções em Pernambuco - Av. Prof. Andrade Bezerra, s/n - Salgadinho,
+                Olinda - PE, 53110-680</p>
         </section>
+
     </main>
 
     <footer></footer>
-
-    <script>
-        window.addEventListener('scroll', function () {
-            const imagem = document.querySelector('.imagem-banner img');
-            const scrollTop = window.scrollY;
-            const fadePoint = 300; // distância em pixels para desaparecer
-
-            // Calcula opacidade entre 1 e 0
-            let opacity = 1 - scrollTop / fadePoint;
-            if (opacity < 0) opacity = 0;
-            imagem.style.opacity = opacity;
-        });
-    </script>
-
 
     <script src="seu-script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"

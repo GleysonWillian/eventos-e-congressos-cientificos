@@ -11,10 +11,21 @@
 
 
     <style>
+        body {
+            padding-top: 30px;
+        }
+
         .custom-navbar {
-            background-color: #165082;
+            top: 0;
+            z-index: 10;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: auto;
+            position: fixed;
+            background-color: #3189d6;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: bold;
+            font-size: large;
         }
 
         .navbar .nav-link {
@@ -32,10 +43,6 @@
         .navbar-toggler:focus {
             outline: none !important;
             box-shadow: none !important;
-        }
-
-        body {
-            padding: 80px;
         }
 
         .tabela-programacao {
@@ -82,23 +89,22 @@
             flex: 4;
             text-align: center;
         }
-        .linha2{
+
+        .linha2 {
             font-size: x-small;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top"
-        style="top: 0px; z-index: 10; padding-left: 40px; padding-right: 40px; height: auto; position: fixed; background-color: #165082; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold; font-size: large;">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container">
-            <!-- Você pode adicionar um logo à esquerda se quiser -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="color:white;"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" style="color: white !important;">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html#Top">Home</a>
                     </li>
@@ -118,7 +124,7 @@
                         <a class="nav-link" href="local.html">Localização</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inscricoes.php">Inscrições</a>
+                        <a class="nav-link" href="inscricoes.php#inscricoes">Inscrições</a>
                     </li>
                 </ul>
             </div>
@@ -127,7 +133,6 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">Programação Geral</h1>
 
-        <!-- Nav tabs -->
         <ul class="nav nav-tabs" id="programacaoTabs" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="dia1-tab" data-bs-toggle="tab" data-bs-target="#dia1" type="button"
@@ -138,18 +143,29 @@
                     role="tab" aria-controls="dia2" aria-selected="false">Dia 2</button>
             </li>
         </ul>
-
-        <!-- Tab panes -->
         <div class="tab-content mt-3">
             <div class="tab-pane fade show active" id="dia1" role="tabpanel" aria-labelledby="dia1-tab">
                 <h4>Programação Dia 1</h4>
                 <div class="tabela-programacao">
                     <div class="linha">
                         <div class="hora">08h00 - 12h00</div>
-                        <div class="evento evento-sbc">Conselho SBC</div>
-                        <div class="evento evento-base">CQ</div>
-                        <div class="evento evento-base">CQEB</div>
-                        <div class="evento evento-base">EIMP</div>
+                        <div class="evento evento-sbc">Conselho SBC <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div>
+                        </div>
+                        <div class="evento evento-base">CQ <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">CQEB <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">EIMP <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
                     </div>
                     <div class="linha">
                         <div class="hora">12h00 - 13h30</div>
@@ -162,9 +178,18 @@
                                 <p>📍 Hotel da Conferência - Sala de reunião</p>
                             </div>
                         </div>
-                        <div class="evento evento-base">CQ</div>
-                        <div class="evento evento-base">CQEB</div>
-                        <div class="evento evento-base">EIMP</div>
+                        <div class="evento evento-base">CQ <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">CQEB <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">EIMP <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
                     </div>
                     <div class="linha">
                         <div class="hora">15h30 - 16h00</div>
@@ -172,10 +197,22 @@
                     </div>
                     <div class="linha">
                         <div class="hora">16h00 - 18h30</div>
-                        <div class="evento evento-sbc">Conselho SBC</div>
-                        <div class="evento evento-base">CQ</div>
-                        <div class="evento evento-base">CQEB</div>
-                        <div class="evento evento-base">EIMP</div>
+                        <div class="evento evento-sbc">Conselho SBC <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">CQ <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">CQEB <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">EIMP <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
                     </div>
                 </div>
             </div>
@@ -186,9 +223,18 @@
                     <div class="linha">
                         <div class="hora">08h00 - 09h30</div>
                         <div class="evento evento-sbc">Sessão Técnica 1</div>
-                        <div class="evento evento-base">Workshop X</div>
-                        <div class="evento evento-base">Mini-curso A</div>
-                        <div class="evento evento-base">Mini-curso B</div>
+                        <div class="evento evento-base">Workshop X <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">Mini-curso A <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">Mini-curso B <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
                     </div>
                     <div class="linha">
                         <div class="hora">09h30 - 10h00</div>
@@ -196,10 +242,22 @@
                     </div>
                     <div class="linha">
                         <div class="hora">10h00 - 12h00</div>
-                        <div class="evento evento-sbc">Sessão Técnica 2</div>
-                        <div class="evento evento-base">Workshop Y</div>
-                        <div class="evento evento-base">Mini-curso C</div>
-                        <div class="evento evento-base">Mini-curso D</div>
+                        <div class="evento evento-sbc">Sessão Técnica 2 <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">Workshop Y <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">Mini-curso C <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
+                        <div class="evento evento-base">Mini-curso D <br>
+                            <div class="linha2">
+                                <p>📍 Hotel da Conferência - Sala de reunião</p>
+                            </div></div>
                     </div>
                 </div>
             </div>

@@ -9,15 +9,35 @@
     <title>Inscrições</title>
 
     <style>
+        
+        body{
+            padding-top: 30px;
+        }
+        .custom-navbar {
+            top: 0;
+            z-index: 10;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: auto;
+            position: fixed;
+            background-color: #3189d6;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: large;
+        }
+
         .navbar .nav-link {
             color: white !important;
         }
+
         .navbar .nav-link:hover {
             color: #08121a9e !important;
         }
+
         .navbar-toggler {
             border-color: white;
         }
+
         .navbar-toggler:focus {
             outline: none !important;
             box-shadow: none !important;
@@ -27,8 +47,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top"
-        style="top: 0px; z-index: 10; padding-left: 40px; padding-right: 40px; height: auto; position: fixed; background-color: #165082; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold; font-size: large;">
+     <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
